@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 995.0, 85.0, 890.0, 400.0 ],
+		"rect" : [ 34.0, 56.0, 529.0, 706.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -58,7 +58,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 752.0, 248.0, 50.0, 22.0 ],
 					"style" : "",
-					"text" : "846"
+					"text" : "420"
 				}
 
 			}
@@ -171,9 +171,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 20.0, 326.0, 226.0, 22.0 ],
+					"patching_rect" : [ 20.0, 326.0, 250.0, 22.0 ],
 					"style" : "",
-					"text" : "jit.gl.slab mainout @file displacement.jxs"
+					"text" : "jit.gl.slab mainout @file displacement-hue.jxs"
 				}
 
 			}
@@ -184,9 +184,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 20.0, 261.0, 111.0, 22.0 ],
+					"patching_rect" : [ 20.0, 250.0, 115.0, 22.0 ],
 					"style" : "",
-					"text" : "read chickens.mp4"
+					"text" : "read sunflower.mp4"
 				}
 
 			}
@@ -213,7 +213,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 289.0, 421.0, 80.0, 36.0 ],
+					"patching_rect" : [ 289.0, 421.0, 80.0, 35.0 ],
 					"style" : ""
 				}
 
