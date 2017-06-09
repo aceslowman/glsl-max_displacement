@@ -51,6 +51,42 @@
     	vec3 intensity = vec3 (dot(color, LumCoeff));
 		return mix(intensity, color, amnt);
 	}
+	
+	/*
+ 	*	SMEAR
+	*/	
+	
+	vec3 smear(vec3 color, float thresh){
+		vec3 su, sd, up, down, amount;
+		if(dot(color,LumCoeff) > thresh){
+			
+				amount.x =  0.2;
+				amount.y =  0.5;
+				amount.z =  0.8;
+				
+				float d = max(1., abs(100.0));
+				sd = vec3(1.0 / d);
+				down = ((color) * sd);
+			
+				float u = max(1.0, abs(0.));
+				su = vec3(1.0 / u);
+				up = color + ((color) * su);
+			
+				return mix(down,up,amount); 
+			
+		}else{ 
+			return color;
+		}
+	}
+	
+	/*
+ 	*	INVERT
+	*/	
+
+	vec3 invert(vec3 color, float amnt){
+		vec3 inverted = mix(color, 1.-color, amnt);
+		return inverted;
+	}
 
 	void main(){
 		vec2 uv0 = texcoord0 / dim; //uv coordinates of the video
@@ -64,8 +100,10 @@
 
 		vec3 color = texture2DRect(tex0, uv0*dim).xyz;
 		
-		color = rotateHue(color, displacement.x * 2.);
-		color = saturate(color, (displacement.x) * 5.0); 
+		color = rotateHue(color, displacement.x * 6.);
+//		color = saturate(color, (displacement.x) * 5.0); 
+//		color = smear(color, displacement.x*0.5);
+//		color = invert(color, displacement.x);
 
 		gl_FragColor = vec4(color,1.0);
 	}

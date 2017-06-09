@@ -16,24 +16,25 @@
 <![CDATA[
 	uniform sampler2DRect tex0;
 	uniform sampler2DRect tex1;
-
+	
+	varying vec2 texdim0;
+	varying vec2 texdim1;
 	varying vec2 texcoord0;
 	varying vec2 texcoord1;
 
 	uniform float strength;
-	uniform vec2 dim;
 
 	void main(){
-		vec2 uv0 = texcoord0 / dim; //uv coordinates of the video
-		vec2 uv1 = texcoord1 / dim; //uv coordinates of the displacement map
+		vec2 uv0 = texcoord0 / texdim0; //uv coordinates of the video
+		vec2 uv1 = texcoord1 / texdim0; //uv coordinates of the displacement map
 
-		vec3 displacement = texture2DRect(tex1, uv1 * dim).xyz; //find the current grayscale value at the uv1 location
+		vec3 displacement = texture2DRect(tex1, uv1 * texdim0).xyz; //find the current grayscale value at the uv1 location
 
 		//focus on the plus here. is there something else I can do to scale it in a more interesting way?
 		uv0.x = (uv0.x - displacement.x / strength);
 		uv0.y = (uv0.y - displacement.y / strength);
 
-		vec3 color = texture2DRect(tex0, uv0*dim).xyz;
+		vec3 color = texture2DRect(tex0, uv0*texdim0).xyz;
 
 		gl_FragColor = vec4(color,1.0);
 	}
