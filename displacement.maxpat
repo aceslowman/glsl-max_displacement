@@ -53,11 +53,11 @@
 				"box" : 				{
 					"comment" : "Displacement Map In",
 					"id" : "obj-6",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 310.0, 36.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -121,7 +121,7 @@
 				"box" : 				{
 					"comment" : "bypass on/off",
 					"id" : "obj-3",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -134,12 +134,12 @@
 				"box" : 				{
 					"comment" : "toggle bypass",
 					"id" : "obj-16",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 67.0, 36.0, 30.0, 30.0 ],
+					"outlettype" : [ "jit_matrix" ],
+					"patching_rect" : [ 420.757446, 36.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -148,11 +148,11 @@
 				"box" : 				{
 					"comment" : "texture in",
 					"id" : "obj-36",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "jit_gl_texture" ],
 					"patching_rect" : [ 18.250183, 36.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -206,7 +206,7 @@
 				"box" : 				{
 					"comment" : "texture out",
 					"id" : "obj-8",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -552,7 +552,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"midpoints" : [ 76.5, 78.0, 27.750183, 78.0 ],
+					"midpoints" : [ 430.257446, 78.0, 27.750183, 78.0 ],
 					"source" : [ "obj-16", 0 ]
 				}
 
@@ -744,8 +744,6 @@
 
 			}
  ],
-		"dependency_cache" : [  ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
