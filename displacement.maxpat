@@ -9,15 +9,15 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 56.0, 644.0, 681.0 ],
+		"rect" : [ 994.0, 258.0, 644.0, 681.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
-		"gridonopen" : 1,
+		"gridonopen" : 2,
 		"gridsize" : [ 15.0, 15.0 ],
-		"gridsnaponopen" : 1,
+		"gridsnaponopen" : 2,
 		"objectsnaponopen" : 1,
 		"statusbarvisible" : 2,
 		"toolbarvisible" : 1,
@@ -57,7 +57,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 310.0, 36.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -138,7 +138,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "jit_matrix" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 420.757446, 36.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -152,7 +152,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "jit_gl_texture" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 18.250183, 36.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -218,13 +218,6 @@
 , 			{
 				"box" : 				{
 					"allowdrag" : 0,
-					"bgfillcolor_angle" : 270.0,
-					"bgfillcolor_autogradient" : 0,
-					"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"bgfillcolor_color1" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
-					"bgfillcolor_color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"bgfillcolor_proportion" : 0.39,
-					"bgfillcolor_type" : "gradient",
 					"id" : "obj-2",
 					"items" : [ "s1", ",", "s2", ",", "s3", ",", "s4", ",", "s5", ",", "s6", ",", "s7", ",", "s8", ",", "k1", ",", "k2", ",", "k3", ",", "k4", ",", "k5", ",", "k6", ",", "k7", ",", "k8", ",", "so1", ",", "so2", ",", "so3", ",", "so4", ",", "so5", ",", "so6", ",", "so7", ",", "so8", ",", "mu1", ",", "mu2", ",", "mu3", ",", "mu4", ",", "mu5", ",", "mu6", ",", "mu7", ",", "mu8", ",", "re1", ",", "re2", ",", "re3", ",", "re4", ",", "re5", ",", "re6", ",", "re7", ",", "re8", ",", "back", ",", "forward", ",", "empty" ],
 					"maxclass" : "umenu",
@@ -235,7 +228,7 @@
 					"patching_rect" : [ 363.257446, 221.394272, 71.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 22.0, 199.5, 46.0, 22.0 ],
-					"style" : ""
+					"style" : "chiba"
 				}
 
 			}
@@ -247,7 +240,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 499.257446, 157.0, 93.0, 33.0 ],
+					"patching_rect" : [ 499.257446, 157.0, 93.0, 34.0 ],
 					"style" : "",
 					"text" : "midi control (bypass)",
 					"textjustification" : 1
@@ -679,7 +672,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-196", 0 ],
-					"midpoints" : [ 371.257446, 407.0, 120.5, 407.0 ],
+					"midpoints" : [ 371.257446, 441.0, 120.5, 441.0 ],
 					"order" : 0,
 					"source" : [ "obj-32", 0 ]
 				}
